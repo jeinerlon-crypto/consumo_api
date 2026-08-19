@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url(/ejercicio\ 3/img/fondo.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.pokedex-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.pokedex-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+h1 {
+  color: #e3350d;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #e3350d;
+}
+
+.search-box button {
+  padding: 10px 16px;
+  background-color: #e3350d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-box button:hover {
+  background-color: #b32709;
+}
+
+/* Tarjeta del Pokémon */
+.pokemon-card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.pokemon-card img {
+  width: 150px;
+  height: 150px;
+}
+
+.pokemon-name {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.type-badge {
+  background-color: #e0e0e0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.stats-list {
+  text-align: left;
+  list-style: none;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.stats-list strong {
+  color: #555;
+}
+
+.error-text {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+.placeholder-text {
+  color: #888;
+}

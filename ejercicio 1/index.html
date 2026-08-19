@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de imágenes</title>
+    <style>
+        *{
+            background: url(/ejercicio\ 1/fondo.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #b2adad;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .btn-cargar {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #1821dd;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .img-card {
+            background: rgb(182, 182, 182);
+            padding: 10px;
+            border: 1px solid #000000;
+        }
+
+        .img-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .img-card h3 {
+            font-size: 14px;
+            margin: 10px 0 0;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Galería de imágenes</h1>
+        <button class="btn-cargar">Mostrar imágenes</button>
+        <div class="galeria"></div>
+    </div>
+
+    <script src="galeria.js"></script>
+</body>
+</html>
